@@ -48,6 +48,12 @@
 
 }
 
+.resume {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
 h1 {
     font-size: 4.4vw;
     font-style: normal;

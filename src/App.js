@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { PDFObject } from "react-pdfobject";
 
 class App extends React.Component{
   render() {
@@ -15,6 +16,9 @@ class App extends React.Component{
             A collection of my work
           </p>
         </div>
+        {/*  <div className="resume">*/}
+        {/*      <PDFObject url="https://bill-portfolio-assets.s3-ap-southeast-2.amazonaws.com/cv.pdf" width="600px" height="800px"/>*/}
+        {/*  </div>*/}
       </div>
     );
   }
