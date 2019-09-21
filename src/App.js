@@ -4,6 +4,7 @@ import HomePage from "./components/home";
 import ResumePage from "./components/resume";
 import PortfolioPage from "./components/portfolio";
 import { BrowserRouter as Router, Route, NavLink, Switch } from "react-router-dom";
+import StackPage from "./components/stack";
 
 class App extends React.Component{
   render() {
@@ -43,6 +44,7 @@ class App extends React.Component{
                       <Route path="/" component={HomePage} exact/>
                       <Route path="/portfolio" component={PortfolioPage} exact/>
                       <Route path="/resume" component={ResumePage} exact/>
+                      <Route path="/stack" component={StackPage} exact/>
                   </Switch>
               </div>
           </Router>
