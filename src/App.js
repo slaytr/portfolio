@@ -1,24 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { PDFObject } from "react-pdfobject";
+import HomePage from "./components/home";
+import ResumePage from "./components/resume";
+import PortfolioPage from "./components/portfolio";
+import { BrowserRouter as Router, Route, NavLink, Switch } from "react-router-dom";
 
 class App extends React.Component{
   render() {
     return (
-      <div className="content">
-        <div className="brand">
-          <span id="text-brand">Bill</span>
-        </div>
-        <div className="home">
-          <h1>My Portfolio</h1>
-          <p>
-            A collection of my work
-          </p>
-        </div>
-        {/*  <div className="resume">*/}
-        {/*      <PDFObject url="https://bill-portfolio-assets.s3-ap-southeast-2.amazonaws.com/cv.pdf" width="600px" height="800px"/>*/}
-        {/*  </div>*/}
+      <div className="layout">
+          <Router>
+              <div className="brand">
+                  <NavLink to="/" id="text-brand">
+                      Bill
+                  </NavLink>
+              </div>
+              <div className="content">
+                  <header id="menu">
+                      <NavLink to="/portfolio" className="menu-item" id="portfolio" activeStyle={{
+                          color: "#FCFCFC",
+                          backgroundColor: "#333333",
+                          borderRadius: "0 0 10px 10px"
+                      }}>
+                          Portfolio
+                      </NavLink>
+                      <NavLink to="/stack" className="menu-item" id="stack" activeStyle={{
+                          color: "#FCFCFC",
+                          backgroundColor: "#333333",
+                          borderRadius: "0 0 10px 10px"
+                      }}>
+                          Stack
+                      </NavLink>
+                      <NavLink to="/resume" className="menu-item" id="resume" activeStyle={{
+                          color: "#FCFCFC",
+                          backgroundColor: "#333333",
+                          borderRadius: "0 0 10px 10px"
+                      }}>
+                          Resume
+                      </NavLink>
+                  </header>
+                  <Switch>
+                      <Route path="/" component={HomePage} exact/>
+                      <Route path="/portfolio" component={PortfolioPage} exact/>
+                      <Route path="/resume" component={ResumePage} exact/>
+                  </Switch>
+              </div>
+          </Router>
+
       </div>
     );
   }

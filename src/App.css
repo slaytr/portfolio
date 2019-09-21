@@ -1,4 +1,5 @@
-.content {
+
+.layout {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 20% 80%;
@@ -17,12 +18,14 @@
 }
 
 #text-brand {
-    height: 150px;
-    width: 150px;
+    height: calc(90px + 5vw);
+    width: calc(90px + 5vw);
 
-    border-radius: 75px;
+    margin: 10px;
+
+    border-radius: calc(90px + 5vw);
     border-style: ridge;
-    border-width: 1px;
+    border-width: 0.01em;
 
     font-family: 'IvyMode Reg';
     font-size: 40px;
@@ -37,21 +40,9 @@
     opacity: 1.0;
 }
 
-.home {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-
-    font-family: 'IvyMode Reg';
-
-}
-
-.resume {
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+.content {
+    display: grid;
+    grid-template-rows: 50px auto;
 }
 
 h1 {
@@ -61,6 +52,50 @@ h1 {
     margin: 0px;
 }
 
+h2 {
+    font-family: "IvyMode Reg";
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 200;
+    color: #333333;
+    margin: 0;
+}
+
 p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: #333333;
+    opacity: 0.9;
     margin: 10px 0 10px 0;
+}
+
+a {
+    cursor: default;
+    text-decoration: none;
+    color: #333333;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item {
+    font-family: "IvyMode Reg";
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 200;
+    color: #333333;
+    margin: 0 2px 0 2px;
+
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.menu-item:hover {
+    opacity: 1;
+}
+#portfolio {
+    padding: 10px;
+    margin: 0 0 0 10px;
 }

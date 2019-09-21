@@ -1,0 +1,10 @@
+.intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+
+    font-family: 'IvyMode Reg';
+
+}
