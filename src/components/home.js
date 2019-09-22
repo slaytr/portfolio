@@ -8,6 +8,7 @@ function HomePage() {
             <div className="home-intro animated fadeIn">
                 <h1>My Portfolio</h1>
                 <p>Hi i'm Bill and this is a collection of my work</p>
+                <div className="psa"><i>PSA - This website is not responsive yet</i></div>
                 <a href="https://www.linkedin.com/in/bill-li-7b654394/">
                     <i className="fab fa-linkedin linkedin-icon"/>
                 </a>

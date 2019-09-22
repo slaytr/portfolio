@@ -29,3 +29,12 @@
     opacity: 1;
     cursor: pointer;
 }
+
+.psa {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #333333;
+    opacity: 0.9;
+    margin: 10px 0 10px 0;
+}
