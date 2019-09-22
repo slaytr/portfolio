@@ -2,7 +2,7 @@
 .layout {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 260px 80%;
 
     background-color: #f7f4f2;
 }
@@ -18,12 +18,12 @@
 }
 
 #text-brand {
-    height: calc(90px + 5vw);
-    width: calc(90px + 5vw);
+    height: 180px;
+    width: 180px;
 
     margin: 10px;
 
-    border-radius: calc(90px + 5vw);
+    border-radius: 100px;
     border-style: ridge;
     border-width: 0.01em;
 

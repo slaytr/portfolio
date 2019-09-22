@@ -1,7 +1,7 @@
 .resume {
     display: flex;
     justify-content: center;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 50px 0 50px;
 }
 
 .resume-page {
@@ -23,7 +23,7 @@
     width: 300px;
     height: 30px;
     /*box-shadow: 1px 1px 1px #333333;*/
-    margin: 20px 0px;
+    margin: 20px 0;
     background-color: #777777;
     opacity: 0.7;
     border-style: none;

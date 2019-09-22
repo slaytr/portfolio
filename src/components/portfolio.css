@@ -2,6 +2,10 @@
     display: grid;
     grid-template-rows: calc(50vh - 25px) calc(50vh - 25px);
 }
+.portfolio-two {
+    display: grid;
+    grid-template-columns: 410px 410px;
+}
 
 .portfolio-layout {
     display: grid;
@@ -79,4 +83,52 @@
     border-radius: 50px;
     color: #FCFCFC;
     background-color: #333333;
+}
+
+.grid-left-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(100vh - 50px);
+}
+
+.grid-right-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(100vh - 50px);
+}
+
+.webCode {
+    max-width: 410px;
+
+    border-radius: 25px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #A2A2A2;
+}
+
+.portfolio-textbox-webcode {
+    display: flex;
+    align-items: flex-start;
+    font-family: "Open Sans", sans-serif;
+    flex-direction: column;
+
+    padding: 20px 20px 20px 40px;
+    max-width: 420px;
+}
+
+
+#webcode-download {
+    width: 340px;
+    height: 30px;
+    margin: 20px 0px;
+    background-color: #777777;
+    opacity: 0.7;
+    border-style: none;
+
+    color: #FCFCFC;
+    font-family: "Open Sans", sans-serif;
 }

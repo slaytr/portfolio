@@ -3,7 +3,7 @@ import './stack.css'
 
 function StackPage() {
     return (
-        <section className="stack-page">
+        <section className="stack-page animated fadeIn">
             <div className="stack-intro">
                 <h1>My Stack</h1>
                 <p>Collection of different languages, frameworks and tools I have used to develop enterprise software</p>
@@ -12,7 +12,7 @@ function StackPage() {
                 </a>
             </div>
             <div className="stack">
-                <embed src="https://embed.stackshare.io/stacks/embed/fe1f082e04bf031a8db61c7597dec7" className="stack-share"></embed>
+                <embed src="https://embed.stackshare.io/stacks/embed/fe1f082e04bf031a8db61c7597dec7" className="stack-share animated fadeInDown"></embed>
             </div>
         </section>
     )
