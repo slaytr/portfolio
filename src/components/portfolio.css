@@ -132,3 +132,31 @@
     color: #FCFCFC;
     font-family: "Open Sans", sans-serif;
 }
+
+#webcode-download:hover {
+    opacity: 1;
+}
+
+.aws-logo {
+    height: calc(40vh - 25px);
+}
+
+.grid-row-content-above-two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 0 30px 0;
+}
+
+.leetcode-image {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.blog-image {
+    width: 400px;
+    border-radius: 10px;
+}
